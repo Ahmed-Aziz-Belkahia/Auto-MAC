@@ -1,0 +1,116 @@
+[
+    {
+        "label": "main_requires_admin",
+        "importPath": "pyuac",
+        "description": "pyuac",
+        "isExtraImport": true,
+        "detail": "pyuac",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "socket",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "socket",
+        "description": "socket",
+        "detail": "socket",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "netifaces",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "netifaces",
+        "description": "netifaces",
+        "detail": "netifaces",
+        "documentation": {}
+    },
+    {
+        "label": "wmi",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wmi",
+        "description": "wmi",
+        "detail": "wmi",
+        "documentation": {}
+    },
+    {
+        "label": "sv_ttk",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sv_ttk",
+        "description": "sv_ttk",
+        "detail": "sv_ttk",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    #HostName\n    def random_windows_hostname():\n        random_string = ''.join(random.choices(string.ascii_uppercase + string.digits, k=7))\n        return f\"DESKTOP-{random_string}\"\n    def change_hostname(new_hostname):\n        if validate_hostname_entry(None, new_hostname):\n            # Run the command to change the hostname\n            command = f'wmic computersystem where name=\"%COMPUTERNAME%\" call rename name=\"{new_hostname}\"'\n            output = subprocess.check_output(command, shell=True)",
+        "detail": "main",
+        "documentation": {}
+    }
+]
